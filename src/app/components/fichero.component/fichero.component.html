@@ -1,0 +1,6 @@
+<form (ngSubmit)="onSubmit()" [formGroup]="createForm" enctype="multipart/form-data">
+  <label for="fileInput">Fichero</label>
+  <input id="fileInput" type="file" (change)="onFileChange($event)" />
+
+  <button type="submit">Agregar Fichero</button>
+</form>
